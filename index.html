@@ -24,11 +24,14 @@
               <div @click="next" class="next">
                   <i class="fas fa-angle-right"></i>
               </div>
+        <!-- Stampa pallini e spostamento classe active nei pallini -->
               <div class="nav">
-                <i class="fas fa-circle"></i>
+                <i v-for="(item, index) in img" :class="[point, index === indexImg ? 'active' : 'point' ]" ></i>
               </div>
           </div>
       </div>
+
+
 
 
     <script type="text/javascript" src="js/script.js">

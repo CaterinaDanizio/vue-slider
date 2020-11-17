@@ -1,15 +1,18 @@
-// Button next & prev
+// Array img - points
 
 var app = new Vue({
   el: '#app',
   data: {
+    point: "fas fa-circle",
     indexImg: 0,
     img: ["img/image1.jpg",
       "img/image2.jpg",
       "img/image3.jpg",
       "img/image4.jpg"],
-    
+
   },
+
+  // Funzioni next e prev
   methods: {
      next: function () {
        this.indexImg ++;
@@ -25,10 +28,4 @@ var app = new Vue({
        }
      }
   },
-
-  // Stampare i pallini
-
-
-
-
-  });
+});
